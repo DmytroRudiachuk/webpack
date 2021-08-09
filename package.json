@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
-  "dependencies": {},
+  "dependencies": {
+    "webpack-dev-server": "^3.11.2"
+  },
   "devDependencies": {
     "cross-env": "^7.0.3",
     "webpack": "^5.49.0",
@@ -11,7 +13,8 @@
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode production",
-    "dev": "cross-env NODE_ENV=development webpack --mode development"
+    "dev": "cross-env NODE_ENV=development webpack --mode development",
+    "start": "cross-env NODE_ENV=development webpack serve --mode development"
   },
   "repository": {
     "type": "git",
