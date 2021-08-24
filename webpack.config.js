@@ -7,6 +7,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin')
 const TerserWebpackPlugin = require('terser-webpack-plugin')
+const ImageminPlugin = require('imagemin-webpack')
 
 const filename = (ext) => isDev ? `[name].${ext}` : `[name].[contenthash].${ext}`
 
